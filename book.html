@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boka bord</title>
+    <link rel="stylesheet" href="Styles/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Boka bord</h1>
+      <div style="padding: 10px">
+        <nav style="border-style: solid" class="header-nav">
+          <ul class="header-nav-ul">
+            <li><a href="index.html">Hem</a></li>
+            <br />
+            <li><a href="menu.html">Meny</a></li>
+            <br />
+            <li><a href="about.html">Om oss</a></li>
+            <br />
+            <li><a href="book.html">Boka bord</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="form-div">
+          <form autocomplete="on" method="get" target="_self" class="form">
+            <label for="name">Name:</label><br />
+            <input
+              placeholder="För- och efternamn"
+              required
+              type="text"
+              id="name"
+              name="name"
+            /><br /><br />
+            <label for="antal">Antal personer:</label><br />
+            <input
+              placeholder="Max 10 personer"
+              type="number"
+              id="antal"
+              name="antal"
+            /><br /><br />
+            <label for="time">Tid:</label><br />
+            <input required type="time" id="time" name="time" /><br /><br />
+            <label for="message">Meddelande:</label><br />
+            <textarea
+              placeholder="Särskilda önskemål? Allergier?"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea
+            ><br /><br />
+            <button class="form-button" type="submit">Boka nu</button>
+            <button class="form-button" type="reset">Återställ formulär</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <br />
+      <strong
+        ><a href="mailto:info@restaurangen.se"
+          >Maila oss för mer info!</a
+        ></strong
+      >
+    </footer>
+  </body>
+</html>
